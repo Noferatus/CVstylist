@@ -1,0 +1,258 @@
+body {
+    min-width: 360px;
+    margin:0;
+    padding:0;
+    text-align: center;
+    color:#ebad41;
+    transition: .5s;
+    font-family: 'Noto Sans Mono', serif;
+}
+
+header{
+    background-image: url("../images/probarFondo.jpg");
+}
+
+#start{
+    font-family: 'Noto Sans Mono', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#titlePrincipal{ 
+    font-family: 'Herr Von Muellerhoff',serif;
+    font-size: 68px;
+    text-align: center;
+}
+.textPrincipal:hover{
+    color:#db961e;
+    box-shadow: 0px 0px 20px #ecd1a1;
+}
+
+.textPrincipal{
+    text-decoration: none;
+    color: #ebad41;
+}
+
+.buttonAppointment{
+    border: 0;
+    padding: 12px 16px;
+    background-color: #ebad41;
+    color: #181616;
+}
+
+.buttonAppointment:hover{
+    color: gray;
+    box-shadow: 0px 0px 10px #ebad41;
+}
+
+#cards{
+    background-image: url("../images/v882-kul-66.jpg");
+    background-position: center;
+    color: #ebad41;
+    border-top: 1px solid #ebad41;
+}
+
+.lastSection{
+    background-image: url("../images/O5X8IL0.jpg");
+    background-position: center;
+}
+
+#titleFooter{
+    font-family: 'Herr Von Muellerhoff',serif;
+    font-size: 60px;
+}
+
+.degreVoid{
+    
+    background: linear-gradient(#181616,#ebad41);
+    
+}
+.degreVoid1{
+    
+    border-bottom: 1px solid #ebad41 ;
+    
+}
+
+footer{
+    background-color: #ebad41;
+    padding: 10px ;
+    display: flex;
+    justify-content: center;
+    color: #181616;
+    
+
+}
+
+.footerBorder{
+    background: #ebad41;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #181616;
+    border-radius: 0;
+}
+
+.aligne{
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px;
+    border: solid 2px #181616;
+    border-radius: 100px;
+    padding: 6px;
+    transition: .5s;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.wrapper .aligne:hover{
+    border: 1px solid gray;
+    box-shadow: 0px 5px 5px 0px gray;
+    transform: translate(0px, -5px);
+}
+
+.fondo{
+    display: flex;
+    justify-content: center;
+    color:#181616;
+    background: #ebad41;
+    text-align: center;
+    font-size: small;
+}
+img.btn-whatsapp {
+    display: block !important;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius:100px !important;
+    }
+    img.btn-whatsapp:hover{
+    border-radius:100px !important;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+    -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+    transition-duration: 1s;
+    }
+.card2{
+    border: 1px solid #ebad41;
+}
+
+.card2:hover{
+    transform: scale(1.07);
+    transition: all 500ms ease;
+}
+
+
+@media screen and (min-width:600px) {
+    header{
+        width: 100%;
+        background-image: url("../images/probarInicio1.jpg");
+        background-repeat:  no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #titlePrincipal{ font-size: 108px;}
+    .lastSection{background-image: url("../images/cubos.jpg");
+        background-position: center;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+.wrapper{
+    position:end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+}
+.wrapper ul{
+    list-style: none;
+    
+}
+
+.wrapper ul li{
+    width:25px;
+    height:25px;
+    line-height: 25px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2.5px solid #181616;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa{
+    color: #181616;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.facebook{
+    border: 3px solid #181616;
+    box-shadow: 0 0 15px grey;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook{
+    color: grey;
+    text-shadow: 0 0 15px #181616;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover.instagram{
+    border: 3px solid #181616;
+    box-shadow: 0 0 15px grey;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram{
+    color: black;
+    text-shadow: 0 0 15px grey;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.twitter{
+    border: 3px solid #181616;
+    box-shadow: 0 0 15px grey;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter{
+    color: black;
+    text-shadow: 0 0 15px grey;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper{
+        width: 350px;
+    }
+    .wrapper ul li {
+        margin-top:10px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .wrapper{
+        width: 150px;
+    }
+    .wrapper ul li {
+        margin: 15px;
+    }
+}
+*/
